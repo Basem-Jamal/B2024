@@ -12,10 +12,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+
+} 
+
 html {
-  scroll-behavior: smooth;
+  height: 100%;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -315,7 +318,7 @@ header nav .form i {
   background-size: cover;
   align-items: center;
   display: flex;
-  
+  overflow: hidden;
 }
 .design::before {
   content: "";
