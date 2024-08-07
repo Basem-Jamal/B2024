@@ -17,10 +17,14 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
+
+  
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 ul {
   list-style: none;
@@ -372,6 +376,76 @@ header nav .form i {
   position: relative;
   top: 1px;
 }
-
-
   /* End Design  */
+  /* Start Portfolio */
+
+  .Portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  
+  }
+
+  .Portfolio .shuffle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Portfolio .shuffle li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .Portfolio .shuffle .active {
+    background-color: var(--main-color);
+    color: #fff;
+
+  }
+
+
+  .Portfolio .imgs-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  .Portfolio .imgs-container .box{
+    overflow: hidden;
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .Portfolio .imgs-container .box{
+      flex-basis: 50%;
+    }
+  }
+  @media (min-width: 1199px) {
+    .Portfolio .imgs-container .box{
+      flex-basis: 25%;
+    }
+  }
+
+
+  .Portfolio .imgs-container .box img{
+    max-width: 100%;
+    transition: 0.3s;
+  }
+
+  .Portfolio .imgs-container .box .caption {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: 0.3s;
+    bottom: -100%;
+  }
+
+  .Portfolio .imgs-container .box:hover .caotion{
+    bottom: 0px;
+  }
+  .Portfolio .imgs-container .box:hover img {
+
+  }
+
+
+
+    /* End Portfolio */
+
